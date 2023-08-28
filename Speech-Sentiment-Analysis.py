@@ -1,6 +1,11 @@
+# Importing Libraries
+
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import speech_recognition as sr
 import matplotlib.pyplot as plt
+
+# Getting Input from Microphone
+
 recognizer = sr.Recognizer()
 with sr.Microphone() as source:
     print("Clearing Background Noise....")
